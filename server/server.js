@@ -22,11 +22,11 @@ const start = async () => {
 };
 start();
 
-app.get("/api/items", async (req, res) => {
-  try {
-    const allTodoItems = await TodoItem.find({});
-    res.status(200).json(allTodoItem);
-  } catch (err) {
-    res.json(err);
-  }
-});
+// app.get("/api/items", async (req, res) => {
+//   try {
+//     const allTodoItems = await TodoItem.find({});
+//     res.status(200).json(allTodoItem);
+//   } catch (err) {
+//     res.json(err);
+//   }
+// });
