@@ -1,9 +1,8 @@
 //import mongoose to create new schema
 const mongoose = require("mongoose");
-const { Schema } = mongoose;
 
 //create schema
-const todoItemSchema = new Schema({
+const todoItemSchema = new mongoose.Schema({
   item: {
     type: String,
     required: true,
